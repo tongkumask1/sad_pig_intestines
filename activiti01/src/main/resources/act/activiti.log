@@ -1,0 +1,496 @@
+2023-09-07 17:55:46,395 0     [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/C:/hf/project/sad_pig_intestines/activiti01/target/classes/activiti.cfg.xml'\n2023-09-07 17:55:46,400 5     [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/C:/hf/project/sad_pig_intestines/activiti01/target/classes/activiti.cfg.xml\n2023-09-07 17:55:46,565 170   [           main] DEBUG k.core.env.StandardEnvironment  - Adding PropertySource 'systemProperties' with lowest search precedence\n2023-09-07 17:55:46,569 174   [           main] DEBUG k.core.env.StandardEnvironment  - Adding PropertySource 'systemEnvironment' with lowest search precedence\n2023-09-07 17:55:46,571 176   [           main] DEBUG k.core.env.StandardEnvironment  - Initialized StandardEnvironment with PropertySources [MapPropertySource@655381473 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\hf\service\Java\jdk1.8.0_202\jre\bin, java.vm.version=25.202-b08, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=CN, user.script=, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\hf\project\sad_pig_intestines\activiti01, java.runtime.version=1.8.0_202-b08, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\hf\service\Java\jdk1.8.0_202\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\80722\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=GBK, java.library.path=C:\hf\service\Java\jdk1.8.0_202\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\hf\service\Java\jdk1.8.0_202\bin;C:\hf\service\apache-maven-3.6.3\bin;C:\hf\service\nodejs\;C:\ProgramData\chocolatey\bin;C:\hf\service\nodejs\node_global\node_modules;C:\hf\service\Git\cmd;C:\hf\softaware\Bandizip\;C:\hf\softaware\NetSarang\Xmanager 7\;C:\hf\softaware\NetSarang\Xshell 7\;C:\hf\softaware\NetSarang\Xftp 7\;C:\hf\softaware\NetSarang\Xlpd 7\;C:\hf\service\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\80722\AppData\Local\Microsoft\WindowsApps;C:\hf\service\nodejs\node_global;;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.0, user.home=C:\Users\80722, user.timezone=Asia/Shanghai, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, java.class.path=C:\hf\softaware\JetBrains\IntelliJ IDEA 2023.1.4\lib\idea_rt.jar;C:\hf\softaware\JetBrains\IntelliJ IDEA 2023.1.4\plugins\junit\lib\junit5-rt.jar;C:\hf\softaware\JetBrains\IntelliJ IDEA 2023.1.4\plugins\junit\lib\junit-rt.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\hf\project\sad_pig_intestines\activiti01\target\test-classes;C:\hf\project\sad_pig_intestines\activiti01\target\classes;C:\hf\stash\maven-repository\org\activiti\activiti-engine\7.0.0.Beta1\activiti-engine-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\activiti\activiti-common-runtime-api\7.0.0.Beta1\activiti-common-runtime-api-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\activiti\activiti-common-model-api\7.0.0.Beta1\activiti-common-model-api-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\activiti\activiti-process-validation\7.0.0.Beta1\activiti-process-validation-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\apache\commons\commons-email\1.5\commons-email-1.5.jar;C:\hf\stash\maven-repository\com\sun\mail\javax.mail\1.5.6\javax.mail-1.5.6.jar;C:\hf\stash\maven-repository\javax\activation\activation\1.1\activation-1.1.jar;C:\hf\stash\maven-repository\org\apache\commons\commons-lang3\3.7\commons-lang3-3.7.jar;C:\hf\stash\maven-repository\org\springframework\spring-beans\5.0.8.RELEASE\spring-beans-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\org\springframework\spring-core\5.0.8.RELEASE\spring-core-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\org\springframework\spring-jcl\5.0.8.RELEASE\spring-jcl-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\de\odysseus\juel\juel-api\2.2.7\juel-api-2.2.7.jar;C:\hf\stash\maven-repository\de\odysseus\juel\juel-impl\2.2.7\juel-impl-2.2.7.jar;C:\hf\stash\maven-repository\de\odysseus\juel\juel-spi\2.2.7\juel-spi-2.2.7.jar;C:\hf\stash\maven-repository\org\assertj\assertj-core\3.9.1\assertj-core-3.9.1.jar;C:\hf\stash\maven-repository\com\fasterxml\jackson\core\jackson-core\2.9.6\jackson-core-2.9.6.jar;C:\hf\stash\maven-repository\com\fasterxml\jackson\core\jackson-databind\2.9.6\jackson-databind-2.9.6.jar;C:\hf\stash\maven-repository\joda-time\joda-time\2.9.9\joda-time-2.9.9.jar;C:\hf\stash\maven-repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\hf\stash\maven-repository\org\activiti\activiti-spring\7.0.0.Beta1\activiti-spring-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\springframework\spring-context\5.0.8.RELEASE\spring-context-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\org\springframework\spring-aop\5.0.8.RELEASE\spring-aop-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\org\springframework\spring-expression\5.0.8.RELEASE\spring-expression-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\org\springframework\spring-jdbc\5.0.8.RELEASE\spring-jdbc-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\org\springframework\spring-tx\5.0.8.RELEASE\spring-tx-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\org\springframework\spring-orm\5.0.8.RELEASE\spring-orm-5.0.8.RELEASE.jar;C:\hf\stash\maven-repository\javax\el\el-api\2.2\el-api-2.2.jar;C:\hf\stash\maven-repository\org\activiti\activiti-bpmn-model\7.0.0.Beta1\activiti-bpmn-model-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\hf\stash\maven-repository\org\activiti\activiti-bpmn-converter\7.0.0.Beta1\activiti-bpmn-converter-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\activiti\activiti-json-converter\7.0.0.Beta1\activiti-json-converter-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\math\geom2d\javaGeom\0.11.1\javaGeom-0.11.1.jar;C:\hf\stash\maven-repository\org\activiti\activiti-bpmn-layout\7.0.0.Beta1\activiti-bpmn-layout-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\com\github\jgraph\jgraphx\v3.9.3\jgraphx-v3.9.3.jar;C:\hf\stash\maven-repository\org\activiti\cloud\activiti-cloud-services-api\7.0.0.Beta1\activiti-cloud-services-api-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\activiti\activiti-process-runtime-api\7.0.0.Beta1\activiti-process-runtime-api-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\org\activiti\activiti-process-model-api\7.0.0.Beta1\activiti-process-model-api-7.0.0.Beta1.jar;C:\hf\stash\maven-repository\mysql\mysql-connector-java\8.0.12\mysql-connector-java-8.0.12.jar;C:\hf\stash\maven-repository\com\google\protobuf\protobuf-java\2.6.0\protobuf-java-2.6.0.jar;C:\hf\stash\maven-repository\org\mybatis\mybatis\3.4.5\mybatis-3.4.5.jar;C:\hf\stash\maven-repository\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar;C:\hf\stash\maven-repository\commons-pool\commons-pool\1.5.4\commons-pool-1.5.4.jar;C:\hf\stash\maven-repository\junit\junit\4.12\junit-4.12.jar;C:\hf\stash\maven-repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\hf\stash\maven-repository\log4j\log4j\1.2.12\log4j-1.2.12.jar;C:\hf\stash\maven-repository\org\slf4j\slf4j-api\1.6.6\slf4j-api-1.6.6.jar;C:\hf\stash\maven-repository\org\slf4j\slf4j-log4j12\1.6.6\slf4j-log4j12-1.6.6.jar;C:\hf\softaware\JetBrains\IntelliJ IDEA 2023.1.4\lib\idea_rt.jar, user.name=80722, java.vm.specification.version=1.8, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit4 com.activiti.test.TestCreate,testCreateDbTable, java.home=C:\hf\service\Java\jdk1.8.0_202\jre, sun.arch.data.model=64, user.language=zh, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_202, java.ext.dirs=C:\hf\service\Java\jdk1.8.0_202\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\hf\service\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\hf\service\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\hf\service\Java\jdk1.8.0_202\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, idea.test.cyclic.buffer.size=1048576, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@1486371051 {name='systemEnvironment', properties={USERDOMAIN_ROAMINGPROFILE=CAMIL, PROCESSOR_LEVEL=6, SESSIONNAME=Console, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, GATEWAY_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\gateway.vmoptions, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, MAVEN_HOME=C:\hf\service\apache-maven-3.6.3, RIDER_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\rider.vmoptions, USERNAME=80722, DEVECOSTUDIO_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\devecostudio.vmoptions, STUDIO_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\studio.vmoptions, ProgramFiles(x86)=C:\Program Files (x86), FPS_BROWSER_USER_PROFILE_STRING=Default, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, APPCODE_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\appcode.vmoptions, DriverData=C:\Windows\System32\Drivers\DriverData, OneDriveConsumer=C:\Users\80722\OneDrive, DATASPELL_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\dataspell.vmoptions, ProgramData=C:\ProgramData, ProgramW6432=C:\Program Files, HOMEPATH=\Users\80722, MYSQL_HOME=C:\Program Files\MySQL\MySQL Server 8.0, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 186 Stepping 2, GenuineIntel, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\Windows, =::=::\, ZES_ENABLE_SYSMAN=1, DATAGRIP_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\datagrip.vmoptions, LOCALAPPDATA=C:\Users\80722\AppData\Local, ChocolateyLastPathUpdate=133344040638292050, USERDOMAIN=CAMIL, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, LOGONSERVER=\\CAMIL, PYCHARM_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\pycharm.vmoptions, WEBSTORM_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\webstorm.vmoptions, JAVA_HOME=C:\hf\service\Java\jdk1.8.0_202, CLION_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\clion.vmoptions, JETBRAINSCLIENT_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\jetbrainsclient.vmoptions, GOLAND_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\goland.vmoptions, OneDrive=C:\Users\80722\OneDrive, APPDATA=C:\Users\80722\AppData\Roaming, IDEA_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\idea.vmoptions, RUBYMINE_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\rubymine.vmoptions, ChocolateyInstall=C:\ProgramData\chocolatey, JETBRAINS_CLIENT_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\jetbrains_client.vmoptions, NODE_PATH=C:\hf\service\nodejs\node_global\node_modules, CommonProgramFiles=C:\Program Files\Common Files, Path=C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\hf\service\Java\jdk1.8.0_202\bin;C:\hf\service\apache-maven-3.6.3\bin;C:\hf\service\nodejs\;C:\ProgramData\chocolatey\bin;C:\hf\service\nodejs\node_global\node_modules;C:\hf\service\Git\cmd;C:\hf\softaware\Bandizip\;C:\hf\softaware\NetSarang\Xmanager 7\;C:\hf\softaware\NetSarang\Xshell 7\;C:\hf\softaware\NetSarang\Xftp 7\;C:\hf\softaware\NetSarang\Xlpd 7\;C:\hf\service\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\80722\AppData\Local\Microsoft\WindowsApps;C:\hf\service\nodejs\node_global;, OS=Windows_NT, COMPUTERNAME=CAMIL, PROCESSOR_REVISION=ba02, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\Windows\system32\cmd.exe, SystemRoot=C:\Windows, TEMP=C:\Users\80722\AppData\Local\Temp, WEBIDE_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\webide.vmoptions, HOMEDRIVE=C:, USERPROFILE=C:\Users\80722, TMP=C:\Users\80722\AppData\Local\Temp, EFC_4392=1, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=16, PHPSTORM_VM_OPTIONS=C:\hf\softaware\JetBrains\jetbra\vmoptions\phpstorm.vmoptions, IDEA_INITIAL_DIRECTORY=C:\Users\80722}}]\n2023-09-07 17:55:46,579 184   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from InputStream resource [resource loaded through InputStream]\n2023-09-07 17:55:46,625 230   [           main] DEBUG tory.xml.DefaultDocumentLoader  - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]\n2023-09-07 17:55:46,688 293   [           main] DEBUG ry.xml.PluggableSchemaResolver  - Loading schema mappings from [META-INF/spring.schemas]\n2023-09-07 17:55:46,696 301   [           main] DEBUG ry.xml.PluggableSchemaResolver  - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-4.3.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task.xsd}\n2023-09-07 17:55:46,702 307   [           main] DEBUG ry.xml.PluggableSchemaResolver  - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans.xsd\n2023-09-07 17:55:46,776 381   [           main] DEBUG ltBeanDefinitionDocumentReader  - Loading bean definitions\n2023-09-07 17:55:46,802 407   [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'\n2023-09-07 17:55:46,803 408   [           main] DEBUG ort.DefaultListableBeanFactory  - Creating instance of bean 'processEngineConfiguration'\n2023-09-07 17:55:47,067 672   [           main] DEBUG ort.DefaultListableBeanFactory  - Eagerly caching bean 'processEngineConfiguration' to allow for resolving potential circular references\n2023-09-07 17:55:47,200 805   [           main] DEBUG ort.DefaultListableBeanFactory  - Finished creating instance of bean 'processEngineConfiguration'\n2023-09-07 17:55:47,215 820   [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql://127.0.0.1:3306/activiti?characterEncoding=UTF-8&nullCatalogMeansCurrent=true&serverTimezone=Asia/Shanghai\n2023-09-07 17:55:47,222 827   [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.\n2023-09-07 17:55:47,237 842   [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.\n2023-09-07 17:55:48,274 1879  [           main] DEBUG source.pooled.PooledDataSource  - Created connection 347978868.\n2023-09-07 17:55:48,276 1881  [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'\n2023-09-07 17:55:48,276 1881  [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql\n2023-09-07 17:55:48,276 1881  [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 347978868 to pool.\n2023-09-07 17:55:49,306 2911  [           main] INFO  ti5CompatibilityHandlerFactory  - Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.\n2023-09-07 17:55:49,309 2914  [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+\n2023-09-07 17:55:49,309 2914  [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------\n2023-09-07 17:55:49,319 2924  [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda\n2023-09-07 17:55:49,327 2932  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true\n2023-09-07 17:55:49,327 2932  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection\n2023-09-07 17:55:49,327 2932  [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 347978868 from pool.\n2023-09-07 17:55:49,327 2932  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@14bdbc74]\n2023-09-07 17:55:49,364 2969  [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on engine with resource org/activiti/db/create/activiti.mysql.create.engine.sql\n2023-09-07 17:55:49,365 2970  [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=8 minorVersion=0\n2023-09-07 17:55:49,366 2971  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_GE_PROPERTY ( 
+NAME_ varchar(64), 
+VALUE_ varchar(300), 
+REV_ integer, 
+primary key (NAME_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,479 3084  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: insert into ACT_GE_PROPERTY 
+values ('schema.version', '7.0.0.0', 1)\n2023-09-07 17:55:49,494 3099  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: insert into ACT_GE_PROPERTY 
+values ('schema.history', 'create(7.0.0.0)', 1)\n2023-09-07 17:55:49,496 3101  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: insert into ACT_GE_PROPERTY 
+values ('next.dbid', '1', 1)\n2023-09-07 17:55:49,499 3104  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_GE_BYTEARRAY ( 
+ID_ varchar(64), 
+REV_ integer, 
+NAME_ varchar(255), 
+DEPLOYMENT_ID_ varchar(64), 
+BYTES_ LONGBLOB, 
+GENERATED_ TINYINT, 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,516 3121  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RE_DEPLOYMENT ( 
+ID_ varchar(64), 
+NAME_ varchar(255), 
+CATEGORY_ varchar(255), 
+KEY_ varchar(255), 
+TENANT_ID_ varchar(255) default '', 
+DEPLOY_TIME_ timestamp(3) NULL, 
+ENGINE_VERSION_ varchar(255), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,535 3140  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RE_MODEL ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+NAME_ varchar(255), 
+KEY_ varchar(255), 
+CATEGORY_ varchar(255), 
+CREATE_TIME_ timestamp(3) null, 
+LAST_UPDATE_TIME_ timestamp(3) null, 
+VERSION_ integer, 
+META_INFO_ varchar(4000), 
+DEPLOYMENT_ID_ varchar(64), 
+EDITOR_SOURCE_VALUE_ID_ varchar(64), 
+EDITOR_SOURCE_EXTRA_VALUE_ID_ varchar(64), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,555 3160  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_EXECUTION ( 
+ID_ varchar(64), 
+REV_ integer, 
+PROC_INST_ID_ varchar(64), 
+BUSINESS_KEY_ varchar(255), 
+PARENT_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+SUPER_EXEC_ varchar(64), 
+ROOT_PROC_INST_ID_ varchar(64), 
+ACT_ID_ varchar(255), 
+IS_ACTIVE_ TINYINT, 
+IS_CONCURRENT_ TINYINT, 
+IS_SCOPE_ TINYINT, 
+IS_EVENT_SCOPE_ TINYINT, 
+IS_MI_ROOT_ TINYINT, 
+SUSPENSION_STATE_ integer, 
+CACHED_ENT_STATE_ integer, 
+TENANT_ID_ varchar(255) default '', 
+NAME_ varchar(255), 
+START_TIME_ datetime(3), 
+START_USER_ID_ varchar(255), 
+LOCK_TIME_ timestamp(3) NULL, 
+IS_COUNT_ENABLED_ TINYINT, 
+EVT_SUBSCR_COUNT_ integer, 
+TASK_COUNT_ integer, 
+JOB_COUNT_ integer, 
+TIMER_JOB_COUNT_ integer, 
+SUSP_JOB_COUNT_ integer, 
+DEADLETTER_JOB_COUNT_ integer, 
+VAR_COUNT_ integer, 
+ID_LINK_COUNT_ integer, 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,590 3195  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_JOB ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+TYPE_ varchar(255) NOT NULL, 
+LOCK_EXP_TIME_ timestamp(3) NULL, 
+LOCK_OWNER_ varchar(255), 
+EXCLUSIVE_ boolean, 
+EXECUTION_ID_ varchar(64), 
+PROCESS_INSTANCE_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+RETRIES_ integer, 
+EXCEPTION_STACK_ID_ varchar(64), 
+EXCEPTION_MSG_ varchar(4000), 
+DUEDATE_ timestamp(3) NULL, 
+REPEAT_ varchar(255), 
+HANDLER_TYPE_ varchar(255), 
+HANDLER_CFG_ varchar(4000), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,610 3215  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_TIMER_JOB ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+TYPE_ varchar(255) NOT NULL, 
+LOCK_EXP_TIME_ timestamp(3) NULL, 
+LOCK_OWNER_ varchar(255), 
+EXCLUSIVE_ boolean, 
+EXECUTION_ID_ varchar(64), 
+PROCESS_INSTANCE_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+RETRIES_ integer, 
+EXCEPTION_STACK_ID_ varchar(64), 
+EXCEPTION_MSG_ varchar(4000), 
+DUEDATE_ timestamp(3) NULL, 
+REPEAT_ varchar(255), 
+HANDLER_TYPE_ varchar(255), 
+HANDLER_CFG_ varchar(4000), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,630 3235  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_SUSPENDED_JOB ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+TYPE_ varchar(255) NOT NULL, 
+EXCLUSIVE_ boolean, 
+EXECUTION_ID_ varchar(64), 
+PROCESS_INSTANCE_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+RETRIES_ integer, 
+EXCEPTION_STACK_ID_ varchar(64), 
+EXCEPTION_MSG_ varchar(4000), 
+DUEDATE_ timestamp(3) NULL, 
+REPEAT_ varchar(255), 
+HANDLER_TYPE_ varchar(255), 
+HANDLER_CFG_ varchar(4000), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,646 3251  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_DEADLETTER_JOB ( 
+ID_ varchar(64) NOT NULL, 
+REV_ integer, 
+TYPE_ varchar(255) NOT NULL, 
+EXCLUSIVE_ boolean, 
+EXECUTION_ID_ varchar(64), 
+PROCESS_INSTANCE_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+EXCEPTION_STACK_ID_ varchar(64), 
+EXCEPTION_MSG_ varchar(4000), 
+DUEDATE_ timestamp(3) NULL, 
+REPEAT_ varchar(255), 
+HANDLER_TYPE_ varchar(255), 
+HANDLER_CFG_ varchar(4000), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,665 3270  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RE_PROCDEF ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+CATEGORY_ varchar(255), 
+NAME_ varchar(255), 
+KEY_ varchar(255) not null, 
+VERSION_ integer not null, 
+DEPLOYMENT_ID_ varchar(64), 
+RESOURCE_NAME_ varchar(4000), 
+DGRM_RESOURCE_NAME_ varchar(4000), 
+DESCRIPTION_ varchar(4000), 
+HAS_START_FORM_KEY_ TINYINT, 
+HAS_GRAPHICAL_NOTATION_ TINYINT, 
+SUSPENSION_STATE_ integer, 
+TENANT_ID_ varchar(255) default '', 
+ENGINE_VERSION_ varchar(255), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,685 3290  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_TASK ( 
+ID_ varchar(64), 
+REV_ integer, 
+EXECUTION_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+NAME_ varchar(255), 
+PARENT_TASK_ID_ varchar(64), 
+DESCRIPTION_ varchar(4000), 
+TASK_DEF_KEY_ varchar(255), 
+OWNER_ varchar(255), 
+ASSIGNEE_ varchar(255), 
+DELEGATION_ varchar(64), 
+PRIORITY_ integer, 
+CREATE_TIME_ timestamp(3) NULL, 
+DUE_DATE_ datetime(3), 
+CATEGORY_ varchar(255), 
+SUSPENSION_STATE_ integer, 
+TENANT_ID_ varchar(255) default '', 
+FORM_KEY_ varchar(255), 
+CLAIM_TIME_ datetime(3), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,702 3307  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_IDENTITYLINK ( 
+ID_ varchar(64), 
+REV_ integer, 
+GROUP_ID_ varchar(255), 
+TYPE_ varchar(255), 
+USER_ID_ varchar(255), 
+TASK_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,719 3324  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_VARIABLE ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+TYPE_ varchar(255) not null, 
+NAME_ varchar(255) not null, 
+EXECUTION_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,734 3339  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_EVENT_SUBSCR ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+EVENT_TYPE_ varchar(255) not null, 
+EVENT_NAME_ varchar(255), 
+EXECUTION_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+ACTIVITY_ID_ varchar(64), 
+CONFIGURATION_ varchar(255), 
+CREATED_ timestamp(3) not null DEFAULT CURRENT_TIMESTAMP(3), 
+PROC_DEF_ID_ varchar(64), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,751 3356  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_EVT_LOG ( 
+LOG_NR_ bigint auto_increment, 
+TYPE_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+TIME_STAMP_ timestamp(3) not null, 
+USER_ID_ varchar(255), 
+DATA_ LONGBLOB, 
+LOCK_OWNER_ varchar(255), 
+LOCK_TIME_ timestamp(3) null, 
+IS_PROCESSED_ tinyint default 0, 
+primary key (LOG_NR_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,768 3373  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_PROCDEF_INFO ( 
+ID_ varchar(64) not null, 
+PROC_DEF_ID_ varchar(64) not null, 
+REV_ integer, 
+INFO_JSON_ID_ varchar(64), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,784 3389  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_RU_INTEGRATION ( 
+ID_ varchar(64) not null, 
+EXECUTION_ID_ varchar(64), 
+PROCESS_INSTANCE_ID_ varchar(64), 
+PROC_DEF_ID_ varchar(64), 
+FLOW_NODE_ID_ varchar(64), 
+CREATED_DATE_ timestamp(3), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:49,797 3402  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_EXEC_BUSKEY on ACT_RU_EXECUTION(BUSINESS_KEY_)\n2023-09-07 17:55:49,841 3446  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDC_EXEC_ROOT on ACT_RU_EXECUTION(ROOT_PROC_INST_ID_)\n2023-09-07 17:55:49,861 3466  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_TASK_CREATE on ACT_RU_TASK(CREATE_TIME_)\n2023-09-07 17:55:49,885 3490  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_IDENT_LNK_USER on ACT_RU_IDENTITYLINK(USER_ID_)\n2023-09-07 17:55:49,897 3502  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_IDENT_LNK_GROUP on ACT_RU_IDENTITYLINK(GROUP_ID_)\n2023-09-07 17:55:49,911 3516  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_EVENT_SUBSCR_CONFIG_ on ACT_RU_EVENT_SUBSCR(CONFIGURATION_)\n2023-09-07 17:55:49,926 3531  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_VARIABLE_TASK_ID on ACT_RU_VARIABLE(TASK_ID_)\n2023-09-07 17:55:49,944 3549  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_ATHRZ_PROCEDEF on ACT_RU_IDENTITYLINK(PROC_DEF_ID_)\n2023-09-07 17:55:49,961 3566  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_INFO_PROCDEF on ACT_PROCDEF_INFO(PROC_DEF_ID_)\n2023-09-07 17:55:49,976 3581  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_GE_BYTEARRAY 
+add constraint ACT_FK_BYTEARR_DEPL 
+foreign key (DEPLOYMENT_ID_) 
+references ACT_RE_DEPLOYMENT (ID_)\n2023-09-07 17:55:50,018 3623  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RE_PROCDEF 
+add constraint ACT_UNIQ_PROCDEF 
+unique (KEY_,VERSION_, TENANT_ID_)\n2023-09-07 17:55:50,037 3642  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION (ID_) on delete cascade on update cascade\n2023-09-07 17:55:50,100 3705  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_PARENT 
+foreign key (PARENT_ID_) 
+references ACT_RU_EXECUTION (ID_) on delete cascade\n2023-09-07 17:55:50,136 3741  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_SUPER 
+foreign key (SUPER_EXEC_) 
+references ACT_RU_EXECUTION (ID_) on delete cascade\n2023-09-07 17:55:50,222 3827  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_EXECUTION 
+add constraint ACT_FK_EXE_PROCDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:50,271 3876  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_IDENTITYLINK 
+add constraint ACT_FK_TSKASS_TASK 
+foreign key (TASK_ID_) 
+references ACT_RU_TASK (ID_)\n2023-09-07 17:55:50,304 3909  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_IDENTITYLINK 
+add constraint ACT_FK_ATHRZ_PROCEDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF(ID_)\n2023-09-07 17:55:50,340 3945  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_IDENTITYLINK 
+add constraint ACT_FK_IDL_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,376 3981  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_EXE 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,429 4034  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,498 4103  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_TASK 
+add constraint ACT_FK_TASK_PROCDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:50,550 4155  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_EXE 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,583 4188  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_PROCINST 
+foreign key (PROC_INST_ID_) 
+references ACT_RU_EXECUTION(ID_)\n2023-09-07 17:55:50,618 4223  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_VARIABLE 
+add constraint ACT_FK_VAR_BYTEARRAY 
+foreign key (BYTEARRAY_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:50,661 4266  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_JOB 
+add constraint ACT_FK_JOB_EXECUTION 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,699 4304  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_JOB 
+add constraint ACT_FK_JOB_PROCESS_INSTANCE 
+foreign key (PROCESS_INSTANCE_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,736 4341  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_JOB 
+add constraint ACT_FK_JOB_PROC_DEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:50,764 4369  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_JOB 
+add constraint ACT_FK_JOB_EXCEPTION 
+foreign key (EXCEPTION_STACK_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:50,802 4407  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_TIMER_JOB 
+add constraint ACT_FK_TIMER_JOB_EXECUTION 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,838 4443  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_TIMER_JOB 
+add constraint ACT_FK_TIMER_JOB_PROCESS_INSTANCE 
+foreign key (PROCESS_INSTANCE_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,875 4480  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_TIMER_JOB 
+add constraint ACT_FK_TIMER_JOB_PROC_DEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:50,918 4523  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_TIMER_JOB 
+add constraint ACT_FK_TIMER_JOB_EXCEPTION 
+foreign key (EXCEPTION_STACK_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:50,960 4565  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_SUSPENDED_JOB 
+add constraint ACT_FK_SUSPENDED_JOB_EXECUTION 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:50,993 4598  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_SUSPENDED_JOB 
+add constraint ACT_FK_SUSPENDED_JOB_PROCESS_INSTANCE 
+foreign key (PROCESS_INSTANCE_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:51,018 4623  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_SUSPENDED_JOB 
+add constraint ACT_FK_SUSPENDED_JOB_PROC_DEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:51,055 4660  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_SUSPENDED_JOB 
+add constraint ACT_FK_SUSPENDED_JOB_EXCEPTION 
+foreign key (EXCEPTION_STACK_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:51,079 4684  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_DEADLETTER_JOB 
+add constraint ACT_FK_DEADLETTER_JOB_EXECUTION 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:51,102 4707  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_DEADLETTER_JOB 
+add constraint ACT_FK_DEADLETTER_JOB_PROCESS_INSTANCE 
+foreign key (PROCESS_INSTANCE_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:51,138 4743  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_DEADLETTER_JOB 
+add constraint ACT_FK_DEADLETTER_JOB_PROC_DEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:51,166 4771  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_DEADLETTER_JOB 
+add constraint ACT_FK_DEADLETTER_JOB_EXCEPTION 
+foreign key (EXCEPTION_STACK_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:51,237 4842  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_EVENT_SUBSCR 
+add constraint ACT_FK_EVENT_EXEC 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION(ID_)\n2023-09-07 17:55:51,273 4878  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RE_MODEL 
+add constraint ACT_FK_MODEL_SOURCE 
+foreign key (EDITOR_SOURCE_VALUE_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:51,307 4912  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RE_MODEL 
+add constraint ACT_FK_MODEL_SOURCE_EXTRA 
+foreign key (EDITOR_SOURCE_EXTRA_VALUE_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:51,339 4944  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RE_MODEL 
+add constraint ACT_FK_MODEL_DEPLOYMENT 
+foreign key (DEPLOYMENT_ID_) 
+references ACT_RE_DEPLOYMENT (ID_)\n2023-09-07 17:55:51,378 4983  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_PROCDEF_INFO 
+add constraint ACT_FK_INFO_JSON_BA 
+foreign key (INFO_JSON_ID_) 
+references ACT_GE_BYTEARRAY (ID_)\n2023-09-07 17:55:51,407 5012  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_PROCDEF_INFO 
+add constraint ACT_FK_INFO_PROCDEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:51,439 5044  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_PROCDEF_INFO 
+add constraint ACT_UNIQ_INFO_PROCDEF 
+unique (PROC_DEF_ID_)\n2023-09-07 17:55:51,455 5060  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_INTEGRATION 
+add constraint ACT_FK_INT_EXECUTION 
+foreign key (EXECUTION_ID_) 
+references ACT_RU_EXECUTION (ID_) 
+on delete cascade\n2023-09-07 17:55:51,489 5094  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_INTEGRATION 
+add constraint ACT_FK_INT_PROC_INST 
+foreign key (PROCESS_INSTANCE_ID_) 
+references ACT_RU_EXECUTION (ID_)\n2023-09-07 17:55:51,539 5144  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: alter table ACT_RU_INTEGRATION 
+add constraint ACT_FK_INT_PROC_DEF 
+foreign key (PROC_DEF_ID_) 
+references ACT_RE_PROCDEF (ID_)\n2023-09-07 17:55:51,563 5168  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - activiti db schema create for component engine successful\n2023-09-07 17:55:51,565 5170  [           main] INFO  ti.engine.impl.db.DbSqlSession  - performing create on history with resource org/activiti/db/create/activiti.mysql.create.history.sql\n2023-09-07 17:55:51,565 5170  [           main] INFO  ti.engine.impl.db.DbSqlSession  - Found MySQL: majorVersion=8 minorVersion=0\n2023-09-07 17:55:51,565 5170  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_PROCINST ( 
+ID_ varchar(64) not null, 
+PROC_INST_ID_ varchar(64) not null, 
+BUSINESS_KEY_ varchar(255), 
+PROC_DEF_ID_ varchar(64) not null, 
+START_TIME_ datetime(3) not null, 
+END_TIME_ datetime(3), 
+DURATION_ bigint, 
+START_USER_ID_ varchar(255), 
+START_ACT_ID_ varchar(255), 
+END_ACT_ID_ varchar(255), 
+SUPER_PROCESS_INSTANCE_ID_ varchar(64), 
+DELETE_REASON_ varchar(4000), 
+TENANT_ID_ varchar(255) default '', 
+NAME_ varchar(255), 
+primary key (ID_), 
+unique (PROC_INST_ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,577 5182  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_ACTINST ( 
+ID_ varchar(64) not null, 
+PROC_DEF_ID_ varchar(64) not null, 
+PROC_INST_ID_ varchar(64) not null, 
+EXECUTION_ID_ varchar(64) not null, 
+ACT_ID_ varchar(255) not null, 
+TASK_ID_ varchar(64), 
+CALL_PROC_INST_ID_ varchar(64), 
+ACT_NAME_ varchar(255), 
+ACT_TYPE_ varchar(255) not null, 
+ASSIGNEE_ varchar(255), 
+START_TIME_ datetime(3) not null, 
+END_TIME_ datetime(3), 
+DURATION_ bigint, 
+DELETE_REASON_ varchar(4000), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,586 5191  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_TASKINST ( 
+ID_ varchar(64) not null, 
+PROC_DEF_ID_ varchar(64), 
+TASK_DEF_KEY_ varchar(255), 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+NAME_ varchar(255), 
+PARENT_TASK_ID_ varchar(64), 
+DESCRIPTION_ varchar(4000), 
+OWNER_ varchar(255), 
+ASSIGNEE_ varchar(255), 
+START_TIME_ datetime(3) not null, 
+CLAIM_TIME_ datetime(3), 
+END_TIME_ datetime(3), 
+DURATION_ bigint, 
+DELETE_REASON_ varchar(4000), 
+PRIORITY_ integer, 
+DUE_DATE_ datetime(3), 
+FORM_KEY_ varchar(255), 
+CATEGORY_ varchar(255), 
+TENANT_ID_ varchar(255) default '', 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,600 5205  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_VARINST ( 
+ID_ varchar(64) not null, 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+NAME_ varchar(255) not null, 
+VAR_TYPE_ varchar(100), 
+REV_ integer, 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+CREATE_TIME_ datetime(3), 
+LAST_UPDATED_TIME_ datetime(3), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,613 5218  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_DETAIL ( 
+ID_ varchar(64) not null, 
+TYPE_ varchar(255) not null, 
+PROC_INST_ID_ varchar(64), 
+EXECUTION_ID_ varchar(64), 
+TASK_ID_ varchar(64), 
+ACT_INST_ID_ varchar(64), 
+NAME_ varchar(255) not null, 
+VAR_TYPE_ varchar(255), 
+REV_ integer, 
+TIME_ datetime(3) not null, 
+BYTEARRAY_ID_ varchar(64), 
+DOUBLE_ double, 
+LONG_ bigint, 
+TEXT_ varchar(4000), 
+TEXT2_ varchar(4000), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,623 5228  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_COMMENT ( 
+ID_ varchar(64) not null, 
+TYPE_ varchar(255), 
+TIME_ datetime(3) not null, 
+USER_ID_ varchar(255), 
+TASK_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+ACTION_ varchar(255), 
+MESSAGE_ varchar(4000), 
+FULL_MSG_ LONGBLOB, 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,635 5240  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_ATTACHMENT ( 
+ID_ varchar(64) not null, 
+REV_ integer, 
+USER_ID_ varchar(255), 
+NAME_ varchar(255), 
+DESCRIPTION_ varchar(4000), 
+TYPE_ varchar(255), 
+TASK_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+URL_ varchar(4000), 
+CONTENT_ID_ varchar(64), 
+TIME_ datetime(3), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,649 5254  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create table ACT_HI_IDENTITYLINK ( 
+ID_ varchar(64), 
+GROUP_ID_ varchar(255), 
+TYPE_ varchar(255), 
+USER_ID_ varchar(255), 
+TASK_ID_ varchar(64), 
+PROC_INST_ID_ varchar(64), 
+primary key (ID_) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_bin\n2023-09-07 17:55:51,662 5267  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_PRO_INST_END on ACT_HI_PROCINST(END_TIME_)\n2023-09-07 17:55:51,679 5284  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_PRO_I_BUSKEY on ACT_HI_PROCINST(BUSINESS_KEY_)\n2023-09-07 17:55:51,692 5297  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_ACT_INST_START on ACT_HI_ACTINST(START_TIME_)\n2023-09-07 17:55:51,707 5312  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_ACT_INST_END on ACT_HI_ACTINST(END_TIME_)\n2023-09-07 17:55:51,721 5326  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_DETAIL_PROC_INST on ACT_HI_DETAIL(PROC_INST_ID_)\n2023-09-07 17:55:51,737 5342  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_DETAIL_ACT_INST on ACT_HI_DETAIL(ACT_INST_ID_)\n2023-09-07 17:55:51,754 5359  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_DETAIL_TIME on ACT_HI_DETAIL(TIME_)\n2023-09-07 17:55:51,769 5374  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_DETAIL_NAME on ACT_HI_DETAIL(NAME_)\n2023-09-07 17:55:51,786 5391  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_DETAIL_TASK_ID on ACT_HI_DETAIL(TASK_ID_)\n2023-09-07 17:55:51,801 5406  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_PROCVAR_PROC_INST on ACT_HI_VARINST(PROC_INST_ID_)\n2023-09-07 17:55:51,818 5423  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_PROCVAR_NAME_TYPE on ACT_HI_VARINST(NAME_, VAR_TYPE_)\n2023-09-07 17:55:51,833 5438  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_PROCVAR_TASK_ID on ACT_HI_VARINST(TASK_ID_)\n2023-09-07 17:55:51,848 5453  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_ACT_INST_PROCINST on ACT_HI_ACTINST(PROC_INST_ID_, ACT_ID_)\n2023-09-07 17:55:51,864 5469  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_ACT_INST_EXEC on ACT_HI_ACTINST(EXECUTION_ID_, ACT_ID_)\n2023-09-07 17:55:51,874 5479  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_IDENT_LNK_USER on ACT_HI_IDENTITYLINK(USER_ID_)\n2023-09-07 17:55:51,888 5493  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_IDENT_LNK_TASK on ACT_HI_IDENTITYLINK(TASK_ID_)\n2023-09-07 17:55:51,896 5501  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_IDENT_LNK_PROCINST on ACT_HI_IDENTITYLINK(PROC_INST_ID_)\n2023-09-07 17:55:51,906 5511  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - SQL: create index ACT_IDX_HI_TASK_INST_PROCINST on ACT_HI_TASKINST(PROC_INST_ID_)\n2023-09-07 17:55:51,928 5533  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - activiti db schema create for component history successful\n2023-09-07 17:55:51,928 5533  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession\n2023-09-07 17:55:51,928 5533  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.\n2023-09-07 17:55:51,928 5533  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...\n2023-09-07 17:55:51,928 5533  [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...\n2023-09-07 17:55:51,930 5535  [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...\n2023-09-07 17:55:51,930 5535  [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...\n2023-09-07 17:55:51,930 5535  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@14bdbc74]\n2023-09-07 17:55:51,930 5535  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@14bdbc74]\n2023-09-07 17:55:51,930 5535  [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 347978868 to pool.\n2023-09-07 17:55:51,930 5535  [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------\n2023-09-07 17:55:51,930 5535  [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+\n2023-09-07 17:55:51,930 5535  [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created\n2023-09-07 17:55:51,935 5540  [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+\n2023-09-07 17:55:51,935 5540  [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------\n2023-09-07 17:55:51,935 5540  [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda\n2023-09-07 17:55:51,940 5545  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection\n2023-09-07 17:55:51,942 5547  [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 347978868 from pool.\n2023-09-07 17:55:51,942 5547  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@14bdbc74]\n2023-09-07 17:55:51,943 5548  [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? \n2023-09-07 17:55:51,960 5565  [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)\n2023-09-07 17:55:51,974 5579  [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 0\n2023-09-07 17:55:51,975 5580  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession\n2023-09-07 17:55:51,975 5580  [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert PropertyEntity[name=cfg.execution-related-entities-count, value=false]\n2023-09-07 17:55:51,975 5580  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 1 insert, 0 update, 0 delete.\n2023-09-07 17:55:51,975 5580  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...\n2023-09-07 17:55:51,975 5580  [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: PropertyEntity[name=cfg.execution-related-entities-count, value=false]\n2023-09-07 17:55:51,975 5580  [           main] DEBUG pertyEntityImpl.insertProperty  - ==>  Preparing: insert into ACT_GE_PROPERTY ( NAME_, VALUE_, REV_ ) values ( ?, ?, 1 ) \n2023-09-07 17:55:51,976 5581  [           main] DEBUG pertyEntityImpl.insertProperty  - ==> Parameters: cfg.execution-related-entities-count(String), false(String)\n2023-09-07 17:55:51,978 5583  [           main] DEBUG pertyEntityImpl.insertProperty  - <==    Updates: 1\n2023-09-07 17:55:51,978 5583  [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...\n2023-09-07 17:55:51,978 5583  [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...\n2023-09-07 17:55:51,978 5583  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@14bdbc74]\n2023-09-07 17:55:51,981 5586  [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...\n2023-09-07 17:55:51,981 5586  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@14bdbc74]\n2023-09-07 17:55:51,981 5586  [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@14bdbc74]\n2023-09-07 17:55:51,981 5586  [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 347978868 to pool.\n2023-09-07 17:55:51,981 5586  [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------\n2023-09-07 17:55:51,981 5586  [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+\n2023-09-07 17:55:51,981 5586  [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default\n
