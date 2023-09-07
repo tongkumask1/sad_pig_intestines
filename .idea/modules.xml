@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/activiti01/activiti01.iml" filepath="$PROJECT_DIR$/activiti01/activiti01.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/actyivitiProject.iml" filepath="$PROJECT_DIR$/.idea/actyivitiProject.iml" />
     </modules>
   </component>
