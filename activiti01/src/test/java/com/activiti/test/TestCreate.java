@@ -13,6 +13,7 @@ public class TestCreate {
         //需要使用activiti提供的工具类 ProcessEngines 使用方法 getDefaultProcessEngine
         //getDefaultProcessEngine方法会默认从resources下读取名字为activiti.cfg.xml的文件
         //创建processEnginc的时候就会创建mysql的表
+        //创建25张表
         ProcessEngine defaultProcessEngine = ProcessEngines.getDefaultProcessEngine();
         System.out.println(defaultProcessEngine);
     }
