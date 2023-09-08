@@ -9,6 +9,17 @@ http://www.springframework.org/schema/contex
 http://www.springframework.org/schema/context/spring-context.xsd
 http://www.springframework.org/schema/tx
 http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!--使用连接池-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://mysql.sqlpub.com:3306/activitizzj?characterEncoding=UTF-8&amp;nullCatalogMeansCurrent=true&amp;serverTimezone=Asia/Shanghai"/>
+        <property name="username" value="zhangzunjie"/>
+        <property name="password" value="9df8c0fcc2e7880b"/>
+        <property name="maxActive" value="3"/>
+        <property name="maxIdle" value="1"/>
+    </bean>
+    <!--在默认方式下 bean的id 固定为 processEngineConfiguration
+        -->
     <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
         <!--配置数据库相关信息-->
         <!--数据库驱动-->
@@ -16,12 +27,14 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
         <!--数据库链接-->
         <property name="jdbcUrl" value="jdbc:mysql://mysql.sqlpub.com:3306/activitizzj?characterEncoding=UTF-8&amp;nullCatalogMeansCurrent=true&amp;serverTimezone=Asia/Shanghai"/>
         <!--数据库用户名-->
-        <property name="jdbcUsername" value="zhangzunjie"/>
+        <!--<property name="jdbcUsername" value="zhangzunjie"/>-->
         <!--数据库密码-->
-        <property name="jdbcPassword" value="9df8c0fcc2e7880b"/>
+        <!--<property name="jdbcPassword" value="9df8c0fcc2e7880b"/>-->
         <!--activiti数据库表在生成的时候使用的策略
-            true = 如果数据库中已经有存在相对应的表，那么直接使用，如果不存在那么会创建
+        true = 如果数据库中已经有存在相对应的表，那么直接使用，如果不存在那么会创建
         -->
-        <property name="databaseSchemaUpdate" value="true"/>
+        <!--<property name="databaseSchemaUpdate" value="true"/>-->
+        <!--使用连接池-->
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 </beans>
